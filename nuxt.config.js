@@ -21,7 +21,8 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
+  plugins: [ 
+    '~/plugins/Vue2TouchEvents.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -31,6 +32,10 @@ export default {
   buildModules: [
     '@nuxtjs/pwa',
   ],
+  
+  pwa: {
+    icon: false // disables the icon module
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
